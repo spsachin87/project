@@ -7,7 +7,7 @@ def Turnoff(update, context):
   send_value(0)
 def Turnon(update, context):
   context.bot.send_message(chat_id=update.effective_chat.id, text="Light turned on")
-  context.bot.send_photo(chat_id=update.effective_chat.id,photo='https://i.dlpng.com/static/png/507790_preview.png')
+  context.bot.send_photo(chat_id=update.effective_chat.id,photo=' https://static.scientificamerican.com/sciam/cache/file/2B38DE31-C1D3-4339-8808D61972976EE4_source.jpg?w=590&h=800&99F03595-B59D-4391-B52CE9CF947F4020')
   send_value(1)
 def send_value(value):
   feed = aio.feeds('light')
