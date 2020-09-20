@@ -3,11 +3,11 @@ from Adafruit_IO import Client,Data,Feed
 import os 
 def Turnoff(update, context):
   context.bot.send_message(chat_id=update.effective_chat.id, text="Light turned off")
-  context.bot.send_photo(chat_id=update.effective_chat.id,photo=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ2jkeH21hHiMjbjXgRr6mPEoXrm0TN4D0QQw&usqp=CAU ')
+  context.bot.send_photo(chat_id=update.effective_chat.id,photo= 'https://png.pngtree.com/png-clipart/20190903/original/pngtree-c4d-simulation-physical-bulb-led-lighting-png-image_4450455.jpg')
   send_value(0)
 def Turnon(update, context):
   context.bot.send_message(chat_id=update.effective_chat.id, text="Light turned on")
-  context.bot.send_photo(chat_id=update.effective_chat.id,photo=' https://static.scientificamerican.com/sciam/cache/file/2B38DE31-C1D3-4339-8808D61972976EE4_source.jpg?w=590&h=800&99F03595-B59D-4391-B52CE9CF947F4020')
+  context.bot.send_photo(chat_id=update.effective_chat.id,photo='https://png.pngtree.com/png-clipart/20200831/original/pngtree-glowing-white-led-bulb-png-image_5488088.jpg')
   send_value(1)
 def send_value(value):
   feed = aio.feeds('light')
